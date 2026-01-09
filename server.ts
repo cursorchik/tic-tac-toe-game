@@ -6,7 +6,6 @@ import axios from 'axios';
 const app = express();
 const PORT = 3000;
 
-// Middlewares
 app.use(express.json());
 app.use(cors({
     origin: '*', // Разрешаем все источники (для тестирования)
@@ -18,7 +17,8 @@ const TELEGRAM_BOT_TOKEN = '';
 const TELEGRAM_CHAT_ID = '';
 
 // API endpoint для отправки сообщений
-app.post('/send-message', async (req, res) => {
+app.post('/send-message', async (req, res) =>
+{
     try {
         const { message } = req.body;
 
