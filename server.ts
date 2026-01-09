@@ -14,8 +14,8 @@ app.use(cors({
     allowedHeaders: ['Content-Type', 'Authorization']
 }));
 
-const TELEGRAM_BOT_TOKEN = '8542901647:AAEUZYbviyxzRQka6BHjQQGnjV237AUCIiM';
-const TELEGRAM_CHAT_ID = '740359458';
+const TELEGRAM_BOT_TOKEN = '';
+const TELEGRAM_CHAT_ID = '';
 
 // API endpoint для отправки сообщений
 app.post('/send-message', async (req, res) => {
